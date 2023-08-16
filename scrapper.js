@@ -130,7 +130,7 @@ class ContactFinder {
 }
 
 (async () => {
-  const contactFinder = new ContactFinder(window.prompt("Nombre del grupo:"));
+  const contactFinder = new ContactFinder(window.prompt("Enter group name:"));
   const members = await contactFinder.getGroupMembers(); // This will return a JS Map Object
   await contactFinder.downloadMembersAsCSV(); // This will download the contacts as CSV
   console.log(_contacts);
